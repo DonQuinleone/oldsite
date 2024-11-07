@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords"
+        content="producer, engraver, recording engineer, classical editor, sheet music editor, recordist, baritone, northern producer, northern conductor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recording | Josh Quinlan - Producer, Baritone & Engraver</title>
+    <meta name="description"
+        content="Josh Quinlan is an English producer, engraver & baritone, regularly working with the finest artists and ensembles.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1><a class="brand" href="index.html">Josh Quinlan</a></h1>
+        <p>Producer, Baritone & Engraver</p>
+    </div>
+
+    <div class="navbar" id="navbar">
+        <a href="index.html">Homepage</a>
+        <a href="about.html">About</a>
+        <a href="editing.html">Editing</a>
+        <a class="active" href="recording.html">Recording</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="mobNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <div class="content">
+        <h3>Producing</h3>
+
+        <img class="full-width" src="img/producing-ram-sep2023.jpg" alt="" style="object-position: 25% 70% !important">
+        <br />
+
+
+        <p>
+            Josh has established himself as an experienced and respected producer, especially within choral music. With
+            dual training in both music and computing, he is not only well-versed in the demands of recording sessions
+            from the performer's perspective, but also familiar with the tools used and processes followed within the
+            control room. <br /><br />
+
+            The role of the producer, like the conductor, is that of a facilitator. Josh is deeply passionate about
+            enabling performers to achieve and surpass their potential, and sees producing very much in this light.
+            Should you decide to work with him on your recording, you can be sure that you'll receive "gregarious,
+            approachable and dedicated" (Ben Parry) support throughout the process.<br /><br />
+
+            Previous clients have included top choirs, orchestras and solo artists, and Josh's discography includes
+            dozens of releases on major labels.
+        </p>
+
+        <h3>Label Management & Consulting</h3>
+
+        <img class="full-width" src="img/label-upward-trend.png" alt="" style="object-position: 75% 80% !important">
+        <br />
+
+        <p>
+            Having worked with some of the world's best distributors and aggregators, Josh has collated a wealth of
+            knowledge about the best practises for operating a successful record label. Some of the labels that Josh has
+            worked with continue to represent artists that receive upwards of 150k listens each month on Spotify alone,
+            with their overall roster exceeding well over 5m Spotify listens on a monthly basis.<br /><br />
+
+            With a deep knowledge of the release lifecycle right from conception through to release, and a love for
+            crafting well-oiled and efficient processes, Josh can help you to achieve your goals, whether you are just
+            starting a new venture or wanting to take an existing one to the next level.<br /><br />
+
+            Whatever stage your label is at, Josh is available to answer all of your questions.
+        </p>
+
+        <h3>Engineering & Post-Production</h3>
+
+        <img class="full-width" src="img/britten-sinfonia-recording.jpg" alt=""
+            style="object-position: 75% 45% !important">
+        <br />
+
+        <p>Josh has also amassed a wealth of experience as a sound recordist, particularly in the recording of live
+            performances. He is able to capture ensembles of all sizes on location, with previous projects including
+            recordings of small 4-8 person chamber ensembles, large choir with orchestra, and massed singers at the
+            Royal Albert Hall. Regardless of the size, he prides himself on his attention to detail and the quality
+            of the final product, so you can be sure that your project is in safe hands.<br /><br />
+
+            As standard, Josh's location recording rig is capable of capturing up to 32 channels of high resolution
+            (24bit 96kHz) audio, which is sufficient for most recording sessions or live events. With an inventory of
+            microphones from top manufacturers including Schoeps, Beyerdynamic, AKG, Blue and RØDE, and knowledge of
+            optimal micing positions, you can be sure that the masters produced will be only of the very highest
+            quality.
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>© Josh Quinlan 2023. All rights reserved.</p>
+    </div>
+
+    <script>
+        window.onscroll = function () { stickNav() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stickNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        function mobNav() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords"
+        content="producer, engraver, recording engineer, classical editor, sheet music editor, recordist, baritone, northern producer, northern conductor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Quinlan - Producer, Baritone & Engraver</title>
+    <meta name="description"
+        content="Josh Quinlan is an English producer, engraver & baritone, regularly working with the finest artists and ensembles.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1><a class="brand" href="index.html">Josh Quinlan</a></h1>
+        <p>Producer, Baritone & Engraver</p>
+    </div>
+
+    <div class="navbar" id="navbar">
+        <a class="active" href="index.html">Homepage</a>
+        <a href="about.html">About</a>
+        <a href="editing.html">Editing</a>
+        <a href="recording.html">Recording</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="mobNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <div class="content">
+        <p>
+            <img class="wrap-left" src="img/informal-clear.png">
+
+            <i class="testimonial">"If you are looking for professionalism, enthusiasm and proficiency in the curation
+                of your music project, look no further than Josh Quinlan!"
+            </i><br />
+            <span class="testimonial-credit">
+                ~ <strong>Ben Parry</strong>
+            </span><br />
+            <i class="testimonial">
+                "Both [Josh's engraving and singing] are first class: the singing
+                accurate, well blended and expressive, and the engraving superb."
+            </i><br />
+            <span class="testimonial-credit">
+                ~ <strong>Ralph Allwood MBE</strong>
+            </span><br />
+            <i class="testimonial">
+                "...It would be our good fortune to work with him again."
+            </i><br />
+            <span class="testimonial-credit">
+                ~ <strong>Ealing Common Choir</strong>
+            </span><br />
+
+            <strong>Josh Quinlan</strong> is an English producer, baritone and engraver. He has worked with many of
+            Britain's very finest artists and ensembles, and has performed in prestigious events including the BBC Proms
+            and Ryedale Festival.<br />
+
+            <a href="about.html">Read more</a>
+
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>© Josh Quinlan 2023. All rights reserved.</p>
+    </div>
+
+    <script>
+        window.onscroll = function () { stickNav() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stickNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        function mobNav() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>

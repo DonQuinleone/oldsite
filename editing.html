@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords"
+        content="producer, engraver, recording engineer, classical editor, sheet music editor, recordist, baritone, northern producer, northern conductor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing | Josh Quinlan - Producer, Baritone & Engraver</title>
+    <meta name="description"
+        content="Josh Quinlan is an English producer, engraver & baritone, regularly working with the finest artists and ensembles.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1><a class="brand" href="index.html">Josh Quinlan</a></h1>
+        <p>Producer, Baritone & Engraver</p>
+    </div>
+
+    <div class="navbar" id="navbar">
+        <a href="index.html">Homepage</a>
+        <a href="about.html">About</a>
+        <a class="active" href="editing.html">Editing</a>
+        <a href="recording.html">Recording</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="mobNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <div class="content">
+        <h3>Editing</h3>
+        <p>
+            As a performer himself, Josh understands the difference that a well-edited score can make to a performance
+            or recording, allowing the musician to make music without having to interpret what's on the page in front of
+            them.<br /><br />
+
+            <img class="full-width" src="img/swingles-uig.png" alt="" style="object-position: 25% 53.5% !important">
+            <br /><br />
+
+            With over a decade of experience in using notation software like Dorico and Sibelius, and an in-depth
+            knowledge of standard editorial practice, Josh is able to produce beautiful scores up to publication
+            standard. Seeing the engraving process as an art in itself, he will not only ensure that music is presented
+            both comprehensibly and elegantly, but also take into consideration your (or your publisher's) house style.
+            All he needs is a copy of the score in its current form, whether that be hand-written or notated
+            digitally.<br /><br />
+
+            Whatever the demands of the score, Josh is able to find a solution. If you have something very specific in
+            mind but there isn't a standard way of notating it, he can create custom graphics that can precisely
+            articulate your intentions. You can be confident that all scores and parts produced will be well-spaced,
+            have sensible page turns and ultimately reflect your music in the best possible light.<br /><br />
+
+            Josh is able to offer the following services as standard, but is happy to consult with you on a more complex
+            project:
+        </p>
+
+        <ul>
+            <li>Typesetting and engraving</li>
+            <li>Part extraction from a master score</li>
+            <li>Converting MIDI files to a print-ready set of score and parts</li>
+            <li>Transcription</li>
+            <li>Proofreading</li>
+            <li>Digitalisation</li>
+            <li>Copying / physical part preparation</li>
+            <li>Orchestration</li>
+            <li>Arrangement</li>
+        </ul>
+
+        <p>
+            When embarking on a project, you will always have a one-to-one consultation with Josh to discuss your
+            requirements and deadline. He is able to work to tight deadlines, where required, and will make sure to keep
+            you updated on the project's progress throughout its duration.<br /><br />
+
+            Previous clients have included:
+        </p>
+
+        <ul>
+            <li>BBC Singers</li>
+            <li>BBC Television</li>
+            <li>Ben Parry</li>
+            <li>Boston Pops Orchestra</li>
+            <li>English Chamber Orchestra</li>
+            <li>Kristina Arakelyan</li>
+            <li>National Youth Choirs of Great Britain</li>
+            <li>Primal Scream / Bobby Gillespie</li>
+            <li>Ralph Allwood</li>
+            <li>The Swingles</li>
+            <li>Trinity College London</li>
+            <li>Wells Cathedral Choir</li>
+        </ul>
+
+        <p>
+            All editing, engraving, compositional, arrangement and orchestration projects are carried out under the
+            <strong>Quinlan Edition</strong> brand.<br /><br />
+            View examples of Josh's work on <a href="https://athena.quinlan.cloud/s/HoD3d7zgyWCeJYT"
+                target="_blank">Athena</a>.
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>© Josh Quinlan 2023. All rights reserved.</p>
+    </div>
+
+    <script>
+        window.onscroll = function () { stickNav() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stickNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        function mobNav() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>
